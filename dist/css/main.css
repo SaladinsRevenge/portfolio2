@@ -195,6 +195,9 @@ img {
 #projects .section-title {
   margin-bottom: 1rem; }
 
+#projects .item-text-title {
+  margin-bottom: 1rem; }
+
 #projects a:hover {
   background-color: #aaa; }
 
