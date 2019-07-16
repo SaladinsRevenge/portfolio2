@@ -135,6 +135,7 @@ i {
 
 * {
   font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin: 0;
   padding: 0; }
 
@@ -145,7 +146,8 @@ body {
 h2,
 h3,
 h4 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2rem; }
 
 a {
   text-decoration: none;
@@ -201,29 +203,30 @@ img {
 #projects a:hover {
   background-color: #aaa; }
 
-#contact .text-fields {
-  display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
-  #contact .text-fields .name-input {
-    grid-area: name; }
-  #contact .text-fields .email-input {
-    grid-area: email; }
-  #contact .text-fields .subject-input {
-    grid-area: subject; }
-  #contact .text-fields .phone-input {
-    grid-area: phone; }
-  #contact .text-fields .message-input {
-    grid-area: message;
-    height: 100px; }
-
-#contact .text-input {
-  outline: none;
-  padding: 1rem 1rem;
-  font-size: 1rem; }
-  #contact .text-input:focus {
-    border: 2px solid #ff4f4f; }
+#contact {
+  background-color: #aaa; }
+  #contact .text-fields {
+    display: grid;
+    grid-template-areas: 'name email' 'subject phone' 'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    #contact .text-fields .name-input {
+      grid-area: name; }
+    #contact .text-fields .email-input {
+      grid-area: email; }
+    #contact .text-fields .subject-input {
+      grid-area: subject; }
+    #contact .text-fields .phone-input {
+      grid-area: phone; }
+    #contact .text-fields .message-input {
+      grid-area: message;
+      height: 100px; }
+  #contact .text-input {
+    outline: none;
+    padding: 1rem 1rem;
+    font-size: 1rem; }
+    #contact .text-input:focus {
+      border: 2px solid #ff4f4f; }
 
 #main-footer {
   background: #222;
@@ -248,7 +251,7 @@ img {
 
 @media (max-width: 800px) {
   #header-home {
-    height: 30rem; }
+    height: 100vh; }
     #header-home .header-content {
       padding-top: 5rem; } }
 
@@ -259,4 +262,24 @@ img {
     #main-nav li {
       padding: 1rem; }
   #header-home {
-    height: 10rem; } }
+    height: 100vh; }
+  #projects .item-text-title {
+    font-size: 1rem; }
+  #contact .text-fields {
+    display: grid;
+    grid-template-areas: 'name' 'email' 'message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    #contact .text-fields .name-input {
+      grid-area: name; }
+    #contact .text-fields .email-input {
+      grid-area: email; }
+    #contact .text-fields .subject-input {
+      grid-area: subject;
+      display: none; }
+    #contact .text-fields .phone-input {
+      grid-area: phone;
+      display: none; }
+    #contact .text-fields .message-input {
+      grid-area: message;
+      height: 100px; } }

@@ -5,6 +5,7 @@
 // Reset
 * {
   font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin: 0;
   padding: 0;
 }
@@ -18,6 +19,7 @@ h2,
 h3,
 h4 {
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 a {
@@ -105,6 +107,8 @@ img {
 
 // Contact Form
 #contact {
+  background-color: $medium-color;
+
   .text-fields {
     display: grid;
     grid-template-areas:
