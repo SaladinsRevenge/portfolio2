@@ -108,8 +108,7 @@ i {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    line-height: 0; }
+    height: auto; }
   .item-text {
     position: absolute;
     top: 0;
@@ -169,8 +168,6 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem; }
-  #main-nav .fixed-nav {
-    position: fixed; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -257,7 +254,7 @@ img {
     #header-home .header-content {
       padding-top: 5rem; } }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   #main-nav {
     flex-direction: column;
     align-items: center; }
@@ -290,4 +287,4 @@ img {
       grid-area: message;
       height: 100px; }
   #main-footer p {
-    font-size: 0.7rem; } }
+    font-size: 0.5rem; } }
