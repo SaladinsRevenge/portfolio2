@@ -5,7 +5,6 @@
 // Reset
 * {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
   margin: 0;
   padding: 0;
 }
@@ -81,7 +80,7 @@ img {
     // Header Content
     .header-content {
       text-align: center;
-      padding-top: 20%;
+      padding-top: 1rem;
 
       h1 {
         font-size: 4rem;
