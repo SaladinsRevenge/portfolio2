@@ -7,6 +7,12 @@
       padding-top: 5rem;
     }
   }
+
+  #projects {
+    .card {
+      display: block;
+    }
+  }
 }
 
 // Smartphones
@@ -23,18 +29,6 @@
   #header {
     &-home {
       height: 100vh;
-    }
-  }
-
-  #projects {
-    .item-text-title {
-      font-size: 1rem;
-    }
-
-    a {
-      display: inline-block;
-      padding: 1rem;
-      font-size: 1rem;
     }
   }
 

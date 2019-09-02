@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Jonathan Hammond | Full Stack Web Developer</title>
   </head>
@@ -34,85 +35,79 @@
 
     <!-- Projects -->
     <section id="projects" class="text-center py-3">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="small-screen-msg">
-          Hover over (or tap if on mobile) the photos below to view either the
-          site or the Github repo!
-        </p>
-        <div class="items my-4">
-          <div class="item">
-            <div class="item-image">
-              <img src="img/projects/project3.JPG" alt="" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-text-title">DevMashUp Social Media</h2>
-                <a
-                  target="_blank"
-                  href="https://saladinsrevenge.github.io/devmashup/dist/"
-                  class="btn-dark"
-                  >View Site</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/SaladinsRevenge/devmashup"
-                  class="btn-dark"
-                  >View Code</a
-                >
-              </div>
-            </div>
+      <h2>Projects</h2>
+      <p class="lead">
+        Browse the website gallery. You can view the site itself or look at the
+        Github repository.
+      </p>
+      <main class="container">
+        <div class="card my-2" data-aos="fade-up">
+          <img src="img/projects/project3.JPG" alt="" />
+          <div class="py-4">
+            <h3 class="my-1">Developer Mash Up</h3>
+            <p class="my-1">
+              devMashUp is a social media platform for developers to share their
+              projects, mentor others, and inspire colleagues to improve their
+              skills.
+            </p>
+            <a
+              class="btn-dark"
+              href="https://saladinsrevenge.github.io/devmashup/dist/"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              class="btn-dark"
+              href="https://github.com/SaladinsRevenge/devmashup"
+              target="_blank"
+              >Repo</a
+            >
           </div>
         </div>
-        <div class="items my-4">
-          <div class="item">
-            <div class="item-image">
-              <img src="img/projects/project1.JPG" alt="" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-text-title">Detrix Web Design</h2>
-                <a
-                  target="_blank"
-                  href="https://saladinsrevenge.github.io/detrix-website/index.html"
-                  class="btn-dark"
-                  >View Site</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/SaladinsRevenge/detrix-website"
-                  class="btn-dark"
-                  >View Code</a
-                >
-              </div>
-            </div>
+        <div class="card my-2" data-aos="fade-up">
+          <img src="img/projects/project1.JPG" alt="" />
+          <div class="py-4">
+            <h3 class="my-1">Detrix Web Design</h3>
+            <p class="my-1">
+              A site for a digital agency that helps companies create their
+              online content.
+            </p>
+            <a
+              class="btn-dark"
+              href="https://saladinsrevenge.github.io/detrix-website/"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              class="btn-dark"
+              href="https://github.com/SaladinsRevenge/detrix"
+              target="_blank"
+              >Repo</a
+            >
           </div>
         </div>
-        <div class="items my-4">
-          <div class="item">
-            <div class="item-image">
-              <img src="img/projects/project2.JPG" alt="" />
-            </div>
-            <div class="item-text">
-              <div class="item-text-wrap">
-                <h2 class="item-text-title">Exodus Landing Page</h2>
-                <a
-                  target="_blank"
-                  href="https://saladinsrevenge.github.io/exodus/dist/"
-                  class="btn-dark"
-                  >View Site</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/SaladinsRevenge/exodus"
-                  class="btn-dark"
-                  >View Code</a
-                >
-              </div>
-            </div>
+        <div class="card my-2" data-aos="fade-up">
+          <img src="img/projects/project2.JPG" alt="" />
+          <div class="py-4">
+            <h3 class="my-1">Exodus</h3>
+            <p class="my-1">
+              A landing page for the launch of a new book.
+            </p>
+            <a
+              class="btn-dark"
+              href="https://saladinsrevenge.github.io/exodus/dist"
+              target="_blank"
+              >Website</a
+            >
+            <a
+              class="btn-dark"
+              href="https://github.com/SaladinsRevenge/exodus"
+              target="_blank"
+              >Repo</a
+            >
           </div>
         </div>
-      </div>
+      </main>
     </section>
 
     <!-- Contact -->
@@ -169,6 +164,13 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000
+      });
+    </script>
     <script src="main.js"></script>
   </body>
 </html>

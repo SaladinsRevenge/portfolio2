@@ -1,6 +1,5 @@
 @import 'config';
 @import 'utilities';
-@import 'item_grid';
 
 // Reset
 * {
@@ -18,6 +17,9 @@ h2,
 h3,
 h4 {
   text-transform: uppercase;
+}
+
+h2 {
   font-size: 2rem;
 }
 
@@ -90,17 +92,13 @@ img {
   }
 }
 
+// Projects
 #projects {
-  .section-title {
-    margin-bottom: 1rem;
-  }
-
-  .item-text-title {
-    margin-bottom: 1rem;
-  }
-
-  a:hover {
-    background-color: $medium-color;
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: $light-color;
   }
 }
 
